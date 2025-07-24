@@ -106,3 +106,123 @@ a {
     height: 2px;
     background: #143C3C;
 }
+
+/* Phần hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    position: relative;
+}
+
+.hero__content {
+    margin-top: 43px;
+}
+
+.hero__heading {
+    width: 368px;
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 1.2;
+    color: var(--primary-color);
+}
+
+.hero__desc {
+    margin-top: 20px;
+    width: 341px;
+    /* Paragraph/h2 18px medium */
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+    /* 155.556% */
+    color: #575D5E;
+}
+
+.hero__cta {
+    display: flex;
+    margin-top: 42px;
+}
+
+.hero .watch-video {
+    position: relative;
+    margin-left: 36px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.hero .watch-video .load-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero .watch-video .play-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 43px;
+    border-radius: 50%;
+    background: #83A17D;
+}
+
+.hero .watch-video span {
+    margin-left: 15px;
+    white-space: nowrap;
+    /* Paragraph/h3 18px bold */
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+    /* 166.667% */
+    color: #152427;
+}
+
+.hero__media {
+    display: flex;
+    column-gap: 20px;
+}
+
+.hero__image {
+    width: 202px;
+    height: 466px;
+    object-fit: cover;
+    border-radius: 110px;
+}
+
+.hero__image:nth-of-type(2) {
+    margin-top: 77px;
+}
+
+/* Làm phần trang trí cho hero */
+
+.hero__hoa-top,
+.hero__hoa-bottom {
+    display: flex;
+    position: absolute;
+}
+
+.hero__hoa-top {
+    top: 0;
+    right: 273px;
+}
+
+.hero__hoa-bottom {
+    bottom: 0;
+    right: 31px;
+}
+
+.hero__icon-top {
+    position: absolute;
+    top: 1px;
+    left: -46px;
+}
+
+.hero__icon-bottom {
+    position: absolute;
+    bottom: 23px;
+    right: -46px;
+}
