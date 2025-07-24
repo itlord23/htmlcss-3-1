@@ -109,10 +109,11 @@ a {
 
 /* Phần hero */
 .hero {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 60px;
+    margin: 28px;
+    padding: 32px 0 60px;
     position: relative;
+    display: flex;
+    column-gap: 76px;
 }
 
 .hero__content {
@@ -182,8 +183,25 @@ a {
 }
 
 .hero__media {
+    position: relative;
     display: flex;
     column-gap: 20px;
+}
+
+.hero__media::after {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background: #4DBB9A;
+    filter: blur(137px);
 }
 
 .hero__image {
@@ -191,6 +209,7 @@ a {
     height: 466px;
     object-fit: cover;
     border-radius: 110px;
+    z-index: 1;
 }
 
 .hero__image:nth-of-type(2) {
@@ -198,31 +217,95 @@ a {
 }
 
 /* Làm phần trang trí cho hero */
+.hero-hoa {
+    z-index: 2;
+}
 
-.hero__hoa-top,
-.hero__hoa-bottom {
+.hero-hoa__top,
+.hero-hoa__bottom {
     display: flex;
     position: absolute;
 }
 
-.hero__hoa-top {
+.hero-hoa__top {
     top: 0;
     right: 273px;
 }
 
-.hero__hoa-bottom {
+.hero-hoa__bottom {
     bottom: 0;
     right: 31px;
 }
 
-.hero__icon-top {
+.hero-hoa__extra-top {
     position: absolute;
-    top: 1px;
+    top: 3px;
     left: -46px;
 }
 
-.hero__icon-bottom {
+.hero-hoa__extra-bottom {
     position: absolute;
-    bottom: 23px;
+    bottom: 1px;
     right: -46px;
+}
+
+/* Làm cho cọng dây bên dưới nằm bên dưới extra */
+.hero-hoa__vector-bottom {
+    rotate: 180deg;
+}
+
+/* Làm phần logo-section */
+.logo-section {
+    margin-top: 42px;
+}
+
+.logo-inner {
+    padding: 76px 121px;
+    border-radius: 100px;
+    background: #E2EDDF;
+}
+
+.logo-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+}
+
+.logo-section__block-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-section__google {
+    font-size: 3.1rem;
+    font-weight: 500;
+    color: #143C3C;
+}
+
+.logo-section__slack {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #143C3C;
+}
+
+.logo-section__agworld {
+    font-size: 2.6rem;
+    font-weight: 400;
+    color: #163C35;
+}
+
+.logo-section__riotinto {
+    font-family: "Sonsie One";
+    font-size: 2.3rem;
+    font-weight: 400;
+    color: #143C3C;
+}
+
+.logo-section__heroku {
+    font-size: 1.9rem;
+    font-weight: 600;
+    letter-spacing: 1.995px;
+    color: #143C3C;
 }
