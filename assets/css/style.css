@@ -47,6 +47,38 @@ a {
     opacity: 0.9;
 }
 
+.name-section {
+    margin-left: 46px;
+    position: relative;
+    /* Paragraph/h4 16px medium */
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.625;
+    /* 162.5% */
+    color: #152427;
+}
+
+.name-section::before {
+    position: absolute;
+    top: 9px;
+    left: -46px;
+    content: "";
+    display: block;
+    width: 25px;
+    height: 1px;
+    background: #152427;
+}
+
+.heading-section {
+    position: relative;
+    /* Heading/H3 42px bold */
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.24;
+    /* 123.81% */
+    color: #152427;
+}
+
 /* Phần header */
 .header {
     font-family: "Public Sans", sans-serif;
@@ -275,7 +307,7 @@ a {
 .logo-section__block-icon {
     display: flex;
     align-items: center;
-    gap: 10px;
+    column-gap: 10px;
 }
 
 .logo-section__google {
@@ -308,4 +340,115 @@ a {
     font-weight: 600;
     letter-spacing: 1.995px;
     color: #143C3C;
+}
+
+/* Làm phần serivce */
+.service {
+    margin-top: 53px;
+    padding: 53px 0;
+}
+
+.service__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service__heading {
+    width: 520px;
+    margin-top: 12px;
+}
+
+.service__heading::after {
+    position: absolute;
+    bottom: 19px;
+    right: 103px;
+    content: "";
+    display: block;
+    width: 66px;
+    height: 2px;
+    background: #152427;
+}
+
+.control-block {
+    display: flex;
+    column-gap: 17px;
+}
+
+.control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    outline: none;
+    border: transparent;
+    color: #152427;
+    background-color: #E2EDDF;
+    transition: 0.25s;
+}
+
+.control-btn:hover {
+    cursor: pointer;
+    color: #fff;
+    border-color: #143C3C;
+    background-color: #143C3C;
+}
+
+.control-next-icon {
+    rotate: 180deg;
+}
+
+.service__row {
+    margin-top: 76px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+}
+
+.service__column {
+    border-radius: 20px;
+    background: #FFF;
+    overflow: hidden;
+}
+
+.service__column:hover {
+    box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+}
+
+.service__img {
+    max-width: 100%;
+    height: 318px;
+    object-fit: cover;
+}
+
+.service__body {
+    padding: 24px 0;
+    border-radius: 0 0 20px 20px;
+    transition: 0.25s;
+}
+
+.service__column:hover .service__body {
+    padding-left: 18px;
+}
+
+.service__title {
+    /* Heading/h1 22px semibold */
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+    /* 100% */
+    color: #152427;
+}
+
+.service__desc {
+    width: 268px;
+    margin-top: 18px;
+    /* Paragraph/h6 14px medium */
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.71;
+    /* 171.429% */
+    color: #7D8188;
 }
