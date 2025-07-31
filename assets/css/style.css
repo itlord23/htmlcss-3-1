@@ -789,3 +789,121 @@ a {
     object-fit: cover;
     display: none;
 }
+
+/* Làm phần features */
+.features {
+    margin-top: 112px;
+    background: #143C3C;
+}
+
+.features-inner {
+    padding: 56px 0 63px;
+}
+
+.features-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features__heading {
+    flex-shrink: 0;
+    width: 457px;
+    color: #fff;
+    position: relative;
+}
+
+.features__heading::after {
+    position: absolute;
+    bottom: 20px;
+    right: 97px;
+    content: "";
+    display: block;
+    width: 66px;
+    height: 2px;
+    background: #83A17D;
+}
+
+.features-header__desc {
+    max-width: 590px;
+    /* Paragraph/h2 18px medium */
+    font-family: "Public Sans";
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+    /* 155.556% */
+    color: #6A8383;
+}
+
+.features-action {
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+}
+
+.features-action__link {
+    margin-right: 26px;
+    /* Paragraph/h2 18px medium */
+    font-family: "Public Sans";
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+    /* 155.556% */
+    color: #FFF;
+}
+
+.features-action__direc-right {
+    color: #80A07B;
+}
+
+.features-video {
+    margin-top: 65px;
+    position: relative;
+}
+
+.features-header__extra {
+    position: absolute;
+    top: -72px;
+    right: -50px;
+}
+
+.features-header__vector {
+    position: absolute;
+    top: -165px;
+    right: -50px;
+}
+
+.features-video__video {
+    width: 100%;
+    height: 544px;
+    object-fit: cover;
+    border-radius: 22px;
+}
+
+.features-video__play-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    outline: none;
+    border: transparent;
+    background: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.features-video__play-btn:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.features-video__play-icon {
+    width: 36px;
+    height: 36px;
+}
